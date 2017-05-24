@@ -1,11 +1,22 @@
 @import "colors&functions.scss";
 
 #welcome {
-  width: 100vw;
-  height: 100vh;
+  @extend .site__width-height;
   background-image: url("./img/coding.jpeg");
   background-color: $main-bg-color;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+  display: flex;
+  flex-direction: column;
+
+  .welcome__title {
+    // align-self: flex-end;
+    margin: 20% 0 0 10%;
+
+    h1 {
+      font-size: 3rem;
+      padding: 10px;
+    }
+  }
 
 }

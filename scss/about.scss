@@ -1,1 +1,47 @@
+@import "colors&functions.scss";
 
+#about {
+  display: flex;
+  background-color: $about-bg-color;
+  @extend .site__width-height;
+  justify-content: space-around;
+
+  .about__img {
+    margin: 5% 0 0 10%;
+    height: 50%;
+    border-radius: 30%;
+  }
+
+  .about__me {
+    margin: 5% 0 0 8%;
+    color: #ffffff;
+
+    .about__me-title {
+      font-size: 3rem;
+      margin: 2rem;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 70%;
+        height: 5px;
+        margin-top: 5px;
+        background-color: $underline-bg-color;
+      }
+    }
+
+    .about__me-p {
+      margin-right: 15%;
+      line-height: 2.5rem;
+      font-size: 1.4rem;
+      text-align: justify;
+    }
+
+    .pepe {
+      font-size: 2rem;
+      text-align: center;
+    }
+
+  }
+
+}
