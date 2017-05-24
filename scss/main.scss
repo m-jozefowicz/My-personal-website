@@ -1,7 +1,9 @@
 @import "header.scss";
+@import "welcome.scss";
+@import "about.scss";
 
 * {
-  margin: 0 auto;
   box-sizing: border-box;
+  margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }

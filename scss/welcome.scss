@@ -1,0 +1,11 @@
+@import "colors&functions.scss";
+
+#welcome {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("./img/coding.jpeg");
+  background-color: $main-bg-color;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
