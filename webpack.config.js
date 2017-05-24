@@ -1,7 +1,7 @@
 //Konfiguracja Webpack
 
 module.exports = {
-  entry: "./js/app.jsx",
+  entry: "./js/main.js",
   output: { filename: "./js/out.js"},
   devServer: {
     inline: true,
