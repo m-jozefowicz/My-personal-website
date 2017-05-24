@@ -63,19 +63,17 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(6);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__app_js__);
-__webpack_require__(1);
 
+document.addEventListener('DOMContentLoaded', function(){
+  
+});
 
 
 /***/ }),
@@ -85,17 +83,17 @@ __webpack_require__(1);
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(2);
+var content = __webpack_require__(3);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(4)(content, {});
+var update = __webpack_require__(5)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
-			var newContent = require("!!../node_modules/css-loader/index.js!../node_modules/sass-loader/lib/loader.js!./main.scss");
+		module.hot.accept("!!../node_modules/css-loader/index.js?url=false!../node_modules/sass-loader/lib/loader.js!./main.scss", function() {
+			var newContent = require("!!../node_modules/css-loader/index.js?url=false!../node_modules/sass-loader/lib/loader.js!./main.scss");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -106,20 +104,32 @@ if(false) {
 
 /***/ }),
 /* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__app_js__);
+__webpack_require__(1);
+
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(3)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "#header {\n  display: flex;\n  background-color: #232528;\n  width: 100vw;\n  height: 4rem;\n  justify-content: center; }\n  #header nav {\n    margin: 0 auto;\n    align-self: center; }\n    #header nav ul {\n      list-style-type: none; }\n      #header nav ul li {\n        display: inline-block;\n        padding: 1rem; }\n        #header nav ul li a {\n          font-size: 2rem;\n          color: #ffffff;\n          text-decoration: none;\n          text-shadow: 3px 2px 4px rgba(150, 150, 150, 0.66); }\n\n* {\n  margin: 0 auto;\n  box-sizing: border-box;\n  font-family: 'Montserrat', sans-serif; }\n", ""]);
+exports.push([module.i, "#header {\n  display: flex;\n  opacity: 0.7;\n  background-color: #232528;\n  width: 100vw;\n  height: 4rem;\n  justify-content: center;\n  z-index: 3;\n  position: fixed; }\n  #header:hover {\n    opacity: 1; }\n  #header nav {\n    margin: 0 auto;\n    align-self: center; }\n    #header nav ul {\n      list-style-type: none; }\n      #header nav ul li {\n        display: inline-block;\n        padding: 1.5rem; }\n        #header nav ul li a {\n          font-size: 1.7rem;\n          color: #ffffff;\n          text-decoration: none; }\n          #header nav ul li a:hover {\n            text-shadow: 3px 2px 4px rgba(150, 150, 150, 0.66); }\n\n#welcome {\n  width: 100vw;\n  height: 100vh;\n  background-image: url(\"./img/coding.jpeg\");\n  background-color: #141516;\n  background-repeat: no-repeat;\n  background-size: cover; }\n\n* {\n  box-sizing: border-box;\n  margin: 0 auto;\n  font-family: 'Montserrat', sans-serif; }\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports) {
 
 /*
@@ -201,7 +211,7 @@ function toComment(sourceMap) {
 
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -238,7 +248,7 @@ var stylesInDom = {},
 	singletonElement = null,
 	singletonCounter = 0,
 	styleElementsInsertedAtTop = [],
-	fixUrls = __webpack_require__(5);
+	fixUrls = __webpack_require__(6);
 
 module.exports = function(list, options) {
 	if(typeof DEBUG !== "undefined" && DEBUG) {
@@ -497,7 +507,7 @@ function updateLink(linkElement, options, obj) {
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports) {
 
 
@@ -589,16 +599,6 @@ module.exports = function (css) {
 	// send back the fixed css
 	return fixedCss;
 };
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-
-document.addEventListener('DOMContentLoaded', function(){
-  
-});
 
 
 /***/ })
