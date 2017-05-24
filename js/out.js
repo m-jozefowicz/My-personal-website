@@ -113,7 +113,7 @@ exports = module.exports = __webpack_require__(3)(undefined);
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, "#header {\n  display: flex;\n  background-color: #232528;\n  width: 100vw;\n  height: 4rem;\n  justify-content: center; }\n  #header nav {\n    margin: 0 auto;\n    align-self: center; }\n    #header nav ul {\n      list-style-type: none; }\n      #header nav ul li {\n        display: inline-block;\n        padding: 1rem; }\n        #header nav ul li a {\n          font-size: 2rem;\n          color: #ffffff;\n          text-decoration: none;\n          text-shadow: 3px 2px 4px rgba(150, 150, 150, 0.66); }\n\n* {\n  margin: 0 auto;\n  box-sizing: border-box;\n  font-family: 'Montserrat', sans-serif; }\n", ""]);
 
 // exports
 
