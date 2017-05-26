@@ -1,20 +1,37 @@
+@import "colors&functions.scss";
 
 #skills {
   @extend .site__width-height;
   background-color: $skills-bg-color;
   display: flex;
-
+  flex-direction: column;
+  justify-content: space-around;
   h2 {
-      font-size: 3rem;
-      margin: 2rem;
+      margin-bottom: 5%;
+      margin-left: 41%;
+      font-size: 3.5rem;
 
       &:after {
         content: "";
         display: block;
-        width: 140%;
+        width: 170px;
         height: 5px;
         margin-top: 5px;
         background-color: $underline-bg-color;
       }
+    }
+
+    h3 {
+      font-size: 2rem;
+      &:after {
+        content: "*Aktualnie intensywnie uczę się JavaScriptu" ;
+        display: block;
+        font-size: 1rem;
+        color: #2C2E27;
+        margin: 10px 0 0 10px;
+      }
+    }
+    img {
+      margin: 0 0 0 30px;
     }
 }
