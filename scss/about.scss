@@ -1,9 +1,9 @@
 @import "colors&functions.scss";
 
 #about {
-  display: flex;
-  background-color: $about-bg-color;
   @extend .site__width-height;
+  background-color: $about-bg-color;
+  display: flex;
   justify-content: space-around;
 
   .about__img {
@@ -16,10 +16,9 @@
     margin: 5% 0 0 8%;
     color: #ffffff;
 
-    .about__me-title {
+     h2 {
       font-size: 3rem;
       margin: 2rem;
-
       &:after {
         content: "";
         display: block;
@@ -35,6 +34,9 @@
       line-height: 2.5rem;
       font-size: 1.4rem;
       text-align: justify;
+      &:last-child {
+        margin-top: 1rem;
+      }
     }
 
     .pepe {

@@ -3,4 +3,22 @@
 #contact {
   background-color: #D5E0E8;
   @extend .site__width-height;
+  display: flex;
+
+  h2 {
+    margin-top: 5%;
+    margin-left: 44%;
+    font-size: 3.5rem;
+
+    &:after {
+      content: "";
+      display: block;
+      width: 120%;
+      height: 5px;
+      margin-top: 5px;
+      background-color: $underline-bg-color;
+    }
+  }
+
+
 }
