@@ -4,6 +4,7 @@
   background-color: #D5E0E8;
   @extend .site__width-height;
   display: flex;
+  flex-direction: column;
 
   h2 {
     margin-top: 5%;
@@ -17,6 +18,18 @@
       height: 5px;
       margin-top: 5px;
       background-color: $underline-bg-color;
+    }
+  }
+
+  .contact__links {
+    margin-top: 10%;
+    display: flex;
+    padding: 20px;
+    align-content: space-between;
+
+    a {
+      font-size: 20px;
+
     }
   }
 
