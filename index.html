@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/kissui.scrollanim/0.3.0/scrollanim.min.css" />
+
 </head>
 
 <body>
@@ -24,34 +26,39 @@
 
   <main id="welcome">
     <div class="welcome__title">
-      <h1>Hello World!</h1>
+      <h1 >Hello World! : )</h1>
     </div>
   </main>
 
   <section id="about">
     <img src="img/my-photo.png" alt="it's me!" class="about__img" />
     <article class="about__me">
-      <h2 class="about__me-title">Tak zwane o mnie</h2>
+      <h2>Tak zwane o mnie</h2>
       <p class="about__me-p">
          Cześć :) Nazywam się Michał Józefowicz i jestem absolwentem kursu programowania Coders Lab
-         w specjalizacji Front-End - edycja wrocławska marzec-maj 2017. Wcześniej, przed kursem, interesowałem się programowaniem webowym na własną rękę (tutoriale i poradniki dostępne w sieci), co przerodziło się do decycji udziału w bootcampie programistycznym. Udział w kursie, dał mi dosyć sporą dawkę wiedzy oraz pomógł ukierunkować się w dalszym rozwoju w tej branży. Aczkolwiek czuję mały niedosyt...<br/>
-         <p class="pepe">dlatego</p>
+         w specjalizacji Front-End - edycja wrocławska marzec-maj 2017. Wcześniej, przed kursem, interesowałem się programowaniem webowym na własną rękę (tutoriale i poradniki dostępne w sieci), co przerodziło się do decycji udziału w bootcampie programistycznym. Udział w kursie, dał mi dosyć sporą dawkę wiedzy oraz pomógł ukierunkować się w dalszym rozwoju w tej branży.
       </p>
       <p class="about__me-p">
-        w wybranym przeze mnie
-        kierunku, przede wszystkim poszukuję miejsca do rozwoju i zbierania pierwszych zawodowych doświadczeń
-        jako Junior : )
+         W wybranym przeze mnie
+         kierunku, przede wszystkim poszukuję miejsca do rozwoju i zbierania  pierwszych zawodowych doświadczeń
+         jako Junior : )
       </p>
     </article>
   </section>
 
   <section id="skills">
-    <div>
+    <div data-kui-anim="lightSpeedIn">
       <h2>Skills</h2>
+      <div>
+        <h3> Technologie i narzędzia z których korzystam </h3>
+        <img  src="./img/html-css-js.png"  width="500px" alt="HTML-CSS-JS" />
+        <img  src="./img/tech.png"  width="500px" alt="React-SASS-PS-GIT-WEBPACK-JQUERY" />
+      </div>
     </div>
   </section>
 
   <aside id="contact">
+    <h2>Kontakt ze mną</h2>
 
   </aside>
 
@@ -60,6 +67,7 @@
   </footer>
 
   <!-- Output javascript file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/kissui.scrollanim/0.3.0/scrollanim.js"></script>
   <script src="js/out.js"></script>
 </body>
 
