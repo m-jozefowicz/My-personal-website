@@ -1,6 +1,6 @@
 <h1> My personal website <h1>
 
-<p>Hello :) This website is about me and show some of my skills.</p>
+<h2>Hello :) This website is about me and show some of my skills.</h2>
 
 <h3>Used technologies</h3>
 
