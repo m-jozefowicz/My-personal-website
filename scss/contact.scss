@@ -8,13 +8,13 @@
 
   h2 {
     margin-top: 5%;
-    margin-left: 44%;
+    margin-left: 39%;
     font-size: 3.5rem;
 
     &:after {
       content: "";
       display: block;
-      width: 120%;
+      width: 110%;
       height: 5px;
       margin-top: 5px;
       background-color: $underline-bg-color;
@@ -22,15 +22,29 @@
   }
 
   .contact__links {
-    margin-top: 10%;
     display: flex;
-    padding: 20px;
     align-content: space-between;
+    margin-top: 5%;
 
-    a {
-      font-size: 20px;
-
+    .contact__links-list {
+      list-style-type: none;
+      // font-size: 20px;
+        li {
+          font-size: 2.5rem;
+          padding: 0.5rem;
+          a {
+            color: black;
+            text-decoration: none;
+            &:hover {
+              color: lighten(black, 30%);
+              }
+            }
+          i {
+            padding-right: 0.8rem;
+          }
+        }
     }
+
   }
 
 
