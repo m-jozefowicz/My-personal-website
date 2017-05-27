@@ -10,15 +10,17 @@
   flex-direction: column;
 
   .welcome__title {
-    // align-self: flex-end;
     margin: 20% 0 0 10%;
 
     h1 {
       font-size: 3rem;
       padding: 10px;
-      color: $header-bg-color;
-      opacity: 0.7;
-      // color: #23282D;
+      opacity: 0.8;
+    }
+
+    h2, p {
+      margin-left: 9%;
+      opacity: 0.8;
     }
   }
 
